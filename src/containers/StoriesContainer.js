@@ -8,7 +8,7 @@ import {
 import { useInfiteScroll } from "../hooks/useInfiteScroll";
 
 export const StoriesContainer = () => {
-  const {count} = useInfiteScroll;
+  const { count } = useInfiteScroll();
   const [storyIds, setStoryIds] = useState([]);
 
   useEffect(() => {
