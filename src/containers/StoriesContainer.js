@@ -5,10 +5,10 @@ import {
   GlobalStyle,
   StoriesContainerWrapper,
 } from "../styles/StoriesContainerStyles";
-import { useInfiteScroll } from "../hooks/useInfiteScroll";
+import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
 
 export const StoriesContainer = () => {
-  const { count } = useInfiteScroll();
+  const { count } = useInfiniteScroll();
   const [storyIds, setStoryIds] = useState([]);
 
   useEffect(() => {
