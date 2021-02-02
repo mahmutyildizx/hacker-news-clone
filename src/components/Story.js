@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import { getStory } from "../services/hackernewsApi";
 import {
   StoryMetaElement,
@@ -6,8 +6,8 @@ import {
   StoryWrapper,
   StoryMeta,
 } from "../styles/StoryStyles";
-import {mapTime} from "../mappers/mapTime"
-export const Story = ({ storyId }) => {
+import { mapTime } from "../mappers/mapTime";
+export const Story = memo(function Story({ storyId }) {
   const [story, setStory] = useState({});
 
   useEffect(() => {
@@ -30,4 +30,4 @@ export const Story = ({ storyId }) => {
       </StoryMeta>
     </StoryWrapper>
   ) : null;
-};
+});
