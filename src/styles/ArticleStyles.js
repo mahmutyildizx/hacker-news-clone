@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StoryWrapper = styled.section`
+export const ArticleWrapper = styled.section`
   padding-top: 10px;
   margin-bottom: 20px;
   border-top: 1px solid #ccc;
@@ -13,7 +13,7 @@ export const StoryWrapper = styled.section`
   }
 `;
 
-export const StoryTitle = styled.div`
+export const ArticleTitle = styled.div`
   margin-bottom: 5px;
   font-size: 18px;
   line-height: 1.8;
@@ -27,7 +27,7 @@ export const StoryTitle = styled.div`
   }
 `;
 
-export const StoryMeta = styled.div`
+export const ArticleMeta = styled.div`
   font-style: italic;
   > span:first-child {
     margin-right: 10px;
@@ -36,12 +36,12 @@ export const StoryMeta = styled.div`
     content: "•";
     margin: 0 7px;
   }
-  .story__meta-bold {
+  .article__meta-bold {
     font-weight: bold;
   }
 `;
 
-export const StoryMetaElement = styled.span`
+export const ArticleMetaElement = styled.span`
   font-weight: bold;
   color: ${(props) => props.color || "red"};
 `;
