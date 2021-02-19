@@ -6,6 +6,7 @@ import {
   ArticleMeta,
 } from "../styles/ArticleStyles";
 import { mapTime } from "../mappers/mapTime";
+
 export const Article = memo(function Article({ article }) {
   return (
     <ArticleWrapper data-testid="article">
