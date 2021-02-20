@@ -14,8 +14,8 @@ export const Article = memo(function Article({ article }) {
         <a href={article.url}>{article.title}</a>
       </ArticleTitle>
       <ArticleMeta>
-        <span data-testid="article-by">
-          <ArticleMetaElement color="#000">By:</ArticleMetaElement> {article.by}
+        <span data-testid="article-author">
+          <ArticleMetaElement color="#000">Author:</ArticleMetaElement> {article.author}
         </span>
         <span data-testid="article-time">
           <ArticleMetaElement color="#000">Posted:</ArticleMetaElement>
